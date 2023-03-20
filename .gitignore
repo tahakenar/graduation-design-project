@@ -1,2 +1,4 @@
 /simulations/slprj
 /simulations/*.slxc
+*.slxc
+.DS_Store
