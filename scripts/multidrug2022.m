@@ -18,9 +18,9 @@ C2 = zeros(1,length(t)-1);
 V = zeros(1,length(t)-1);
 
 %%variables
-u=1;    v=1;
+u=0;    v=0;
 
-for i=1:30
+for i=1:length(t)
     V(i) = S1(i) + S2(i) + S3(i); 
     S1(i+1) = S1(i) + getDeltaS1(r1,S1(i),V(i),k1,tau1,alpha1,C1(i),beta1,C2(i));
     S2(i+1) = S2(i) + getDeltaS2(r2,S2(i),V(i),k2,tau1,S1(i),alpha2,C2(i),tau23,tau32,S3(i),C1(i));
@@ -77,6 +77,3 @@ end
 function output = getDeltaC2(v,lambda2,C2)
     output = v-lambda2*C2;
 end
-
-
-

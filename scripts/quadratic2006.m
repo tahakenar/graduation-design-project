@@ -53,6 +53,3 @@ end
 function output = getDeltaM(gamma,M, Vm)
     output = -gamma*M + Vm;
 end
-
-
-
