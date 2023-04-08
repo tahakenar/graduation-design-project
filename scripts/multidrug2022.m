@@ -28,7 +28,6 @@ for i=1:length(t)
     N(i+1) = N(i) + getDeltaN(r4,N(i),k4,gamma,V(i),T_star,an,C1(i),bn,C2(i));
     C1(i+1) = C1(i) + getDeltaC1(u,lambda1,C1(i));
     C2(i+1) = C2(i) + getDeltaC2(v,lambda2,C2(i));
-    %C1 C2 YAZILMADI
 end
 
 figure(1); hold on;
