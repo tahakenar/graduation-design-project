@@ -1,4 +1,4 @@
-clc;clear;clf
+ clc;clear;clf
 
 run('multidrug2022parameters.m');
 
