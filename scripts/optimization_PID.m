@@ -1,5 +1,7 @@
 function cost = optimization_PID(k)
+%multi objective function
 assignin('base','k',k);
 sim("multidrug2022simulation.slx");
-cost = total_tumor_ise(length(total_tumor_ise));
+cost(1) = (total_tumor_pop(end));
+cost(2) = -(normal_cell_pop(end));
 end
